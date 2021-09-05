@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    perspective: 1500px;
+}
+.boxarea{
+    position: relative;
+    transform-style: preserve-3d;
+    animation-name: rotatecube;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes rotatecube {
+    0%{
+        transform: rotate3d(0,0,0);
+    }
+    100%{
+        transform :rotate3d(0,1,0,360deg);
+    }
+}
+.box{
+    position: absolute;
+    height:400px;
+    width:400px;
+    border : 1px solid white;
+}
+/*.box-front{
+    transform: translateX(-200px) translateY(-200px) translateZ(200px);
+    background-color: blueviolet;
+}
+.box-back{
+    transform: translateX(-200px) translateY(-200px) translateZ(-200px);
+    background-color: royalblue
+}
+.box-right{
+    transform:  translateY(-200px) rotateY(90deg);
+    background-color: rosybrown;
+}
+.box-left{
+    transform: translateY(-200px) translateX(-400px) rotateY(90deg);
+    background-color: olivedrab;
+}
+.box-bottom{
+    transform: translateX(-200px) rotateX(90deg);
+    background-color: lightgreen;
+}
+.box-top{
+    transform: translateX(-200px) translateY(-400px) rotateX(90deg);
+    background-color: dodgerblue;
+}*/
+.box-front {
+    transform: translateX(-200px) translateY(-200px) translateZ(200px);
+    background: rgba(255, 16, 107, 0.5);
+  }
+  
+  .box-back {
+    transform: translateX(-200px) translateY(-200px) translateZ(-200px);
+    background: rgba(1, 251, 236, 0.5);
+  }
+  
+  .box-right {
+    transform: translateY(-200px) rotateY(90deg);
+    background: rgba(4, 255, 116, 0.5);
+  }
+  
+  .box-left {
+    transform: translateY(-200px) translateX(-400px) rotateY(90deg);
+    background: rgba(216, 255, 0, 0.5);
+  }
+  
+  .box-top {
+    transform: translateX(-200px) translateY(-400px) rotateX(90deg);
+    background: rgba(0, 6, 246, 0.5);
+  }
+  
+  .box-bottom {
+    transform: translateX(-200px) rotateX(90deg);
+    background: rgba(255, 30, 0, 0.5);
+  }
+  
+  .box-area {
+    transform: rotateX(90deg) rotateY(90deg);
+  }
+  .boxarea {
+    transform: rotateX(90deg) rotateY(90deg);
+  }
